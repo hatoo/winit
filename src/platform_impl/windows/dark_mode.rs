@@ -132,10 +132,12 @@ fn set_dark_mode_for_window(hwnd: HWND, is_dark_mode: bool) {
                 cbData: std::mem::size_of_val(&is_dark_mode_bigbool) as _,
             };
 
+            /*
             assert_eq!(
                 1,
                 set_window_composition_attribute(hwnd, &mut data as *mut _)
             );
+            */
         }
     }
 }
